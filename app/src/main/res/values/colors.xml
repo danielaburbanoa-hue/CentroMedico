@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores básicos -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores del diseño - Verde hospitalario -->
+    <color name="verde_primario_oscuro">#1B4D3E</color>
+    <color name="verde_menta_claro">#D1E7DD</color>
+    <color name="verde_menta_muy_claro">#E6F2ED</color>
+    <color name="fondo_general">#F8F9FA</color>
+    <color name="tarjeta_fondo">#FFFFFF</color>
+
+    <!-- Colores originales (compatibilidad) -->
+    <color name="accent_persona">#1A3B9D</color>
+    <color name="accent_medico">#007A29</color>
+    <color name="accent_admin">#AF7803</color>
+</resources>

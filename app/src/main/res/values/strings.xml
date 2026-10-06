@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">aplicacion_DanielaB</string>
+    <string name="titulo_app">Sistema de Gestion Hospitalaria</string>
+    <string name="seccion_persona">Persona</string>
+    <string name="seccion_medico">Médico</string>
+    <string name="seccion_admin">Administrativo</string>
+</resources>

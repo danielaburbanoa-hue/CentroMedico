@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.Aplicacion_DanielaB" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color: Verde primario oscuro -->
+        <item name="colorPrimary">@color/verde_primario_oscuro</item>
+        <item name="colorPrimaryVariant">@color/verde_primario_oscuro</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary color: Verde menta claro -->
+        <item name="colorSecondary">@color/verde_menta_claro</item>
+        <item name="colorSecondaryVariant">@color/verde_menta_muy_claro</item>
+        <item name="colorOnSecondary">@color/verde_primario_oscuro</item>
+
+        <!-- Background and surface -->
+        <item name="android:colorBackground">@color/fondo_general</item>
+        <item name="colorSurface">@color/tarjeta_fondo</item>
+        <item name="colorOnSurface">@color/black</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/verde_primario_oscuro</item>
+    </style>
+
+    <style name="Theme.Aplicacion_DanielaB" parent="Base.Theme.Aplicacion_DanielaB" />
+
+    <!-- Estilo para tarjetas del diseño -->
+    <style name="CardLab03" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/tarjeta_fondo</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+    </style>
+
+    <!-- Estilo para botones principales -->
+    <style name="BotonPrincipal" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/verde_primario_oscuro</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <!-- Estilo para botones secundarios -->
+    <style name="BotonSecundario" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/verde_primario_oscuro</item>
+        <item name="android:textColor">@color/verde_primario_oscuro</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+</resources>

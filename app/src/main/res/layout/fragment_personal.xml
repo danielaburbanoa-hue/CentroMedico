@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo_general">
+
+    <!-- TabLayout para filtros -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutPersonal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/verde_primario_oscuro"
+        app:tabSelectedTextColor="@color/verde_primario_oscuro"
+        app:tabTextColor="@color/black">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Todos" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médicos" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enfermeros" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Administrativos" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- RecyclerView de personal -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPersonal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:clipToPadding="false" />
+
+    <!-- Card de detalle del empleado seleccionado -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardDetalleEmpleado"
+        style="@style/CardLab03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detalle del Empleado"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/verde_primario_oscuro"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fecha Ingreso:"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:alpha="0.7" />
+
+                <TextView
+                    android:id="@+id/tvFechaIngreso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="N/A"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sueldo:"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:alpha="0.7" />
+
+                <TextView
+                    android:id="@+id/tvSueldo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="$0.00"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/verde_primario_oscuro" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Botón Contratar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContratar"
+        style="@style/BotonPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="+ Contratar"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconGravity="textStart" />
+
+</LinearLayout>
